@@ -23,11 +23,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [`style-loader`,
           MiniCssExtractPlugin.loader,
           `css-loader`,
-          `postcss-loader`]
+          `postcss-loader`,
+          `less-loader`]
       }
     ]
   },
